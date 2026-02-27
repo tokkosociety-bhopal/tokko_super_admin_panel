@@ -126,7 +126,7 @@ export default function SocietyDetail() {
   }
 
   try {
-    const url = `https://tokko-society-admin-panel.vercel.app/visitor-entry/${societyId}?key=${qrKey}`;
+    const url = `https://tokko-society-admin-panel.vercel.app/visitor-entry/${societyId}?key=${society.qrKey}`;
 
     const qrImage = await QRCode.toDataURL(url);
 

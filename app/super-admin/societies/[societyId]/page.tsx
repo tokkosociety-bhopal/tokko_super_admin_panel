@@ -126,7 +126,10 @@ export default function SocietyDetail() {
   }
 
   try {
-    const url = `https://tokko-society-admin-panel.vercel.app/visitor-entry/${societyId}?key=${society.qrKey}`;
+    const latestSnap = await getDoc(doc(db, "societies", societyId));
+const latestData = latestSnap.data();
+
+const url = `https://tokko-society-admin-panel.vercel.app/visitor-entry/${societyId}?key=${latestData?.qrKey}`;
 
     const qrImage = await QRCode.toDataURL(url);
 
@@ -162,14 +165,11 @@ const handleRegenerateQR = async () => {
   try {
     const regenerate = httpsCallable(functions, "regenerateSocietyQR");
 
-    const res: any = await regenerate({
-      societyId,
-    });
+    await regenerate({ societyId });
 
     alert("QR regenerated successfully");
 
-    // Page refresh taaki new QR reflect ho
-    window.location.reload();
+    await fetchData(); // ✅ important
 
   } catch (error: any) {
     console.error(error);

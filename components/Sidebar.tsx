@@ -40,6 +40,15 @@ export default function Sidebar() {
         </li>
 
         <li>
+  <Link
+    href="/super-admin/contact-leads"
+    className="hover:text-gray-300 transition"
+  >
+    Contact Leads
+  </Link>
+</li>
+
+        <li>
           <Link
             href="/super-admin/inquiries"
             className="hover:text-gray-300 transition"

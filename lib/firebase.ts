@@ -4,14 +4,14 @@ import { getFirestore } from "firebase/firestore";
 import { getFunctions } from "firebase/functions";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCjpY_9_-C5_8ShIj4gwkgVcYwzf2wbDgU",
-  authDomain: "tokko-society.firebaseapp.com",
-  projectId: "tokko-society",
-  storageBucket: "tokko-society.firebasestorage.app",
-  messagingSenderId: "842132813928",
-  appId: "1:842132813928:web:6c9bae746e795f10cb63dd",
-  measurementId: "G-ZKFB1EMF9J"
+  apiKey: "AIzaSyDBkNHL1BBBQJ9U77q-2CPfI87f8lxOOFc",
+  authDomain: "tokko-society-19052026.firebaseapp.com",
+  projectId: "tokko-society-19052026",
+  storageBucket: "tokko-society-19052026.firebasestorage.app",
+  messagingSenderId: "100599934",
+  appId: "1:100599934:web:1c23c68b42857096db702f",
 };
+
 const app =
   getApps().length === 0
     ? initializeApp(firebaseConfig)

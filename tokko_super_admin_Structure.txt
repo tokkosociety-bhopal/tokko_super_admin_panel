@@ -1,0 +1,74 @@
+PS D:\Tokko-Society\society_app\tokko-super-admin> tree /f
+
+D:.
+│   .gitignore
+│   eslint.config.mjs
+│   next-env.d.ts
+│   next.config.ts
+│   package-lock.json
+│   package.json
+│   postcss.config.mjs
+│   README.md
+│   tsconfig.json
+│
+├───app
+│   │   favicon.ico
+│   │   globals.css
+│   │   layout.tsx
+│   │   page.tsx
+│   │
+│   ├───login
+│   │       page.tsx
+│   │
+│   └───super-admin
+│       │   layout.tsx
+│       │
+│       ├───announcements
+│       │       page.tsx
+│       │
+│       ├───contact-leads
+│       │       page.tsx
+│       │
+│       ├───create-society
+│       │       page.tsx
+│       │
+│       ├───dashboard
+│       │       page.tsx
+│       │
+│       ├───edit-society
+│       │   └───[societyId]
+│       │           page.tsx
+│       │
+│       ├───inquiries
+│       │       page.tsx
+│       │
+│       ├───societies
+│       │   │   page.tsx
+│       │   │
+│       │   └───[societyId]
+│       │           page.tsx
+│       │
+│       ├───subscriptions
+│       │       page.tsx
+│       │
+│       ├───suggestions
+│       │       page.tsx
+│       │
+│       └───unit-requests
+│               page.tsx
+│
+├───components
+│       Header.tsx
+│       Sidebar.tsx
+│       StatsCard.tsx
+│
+├───lib
+│       authGuard.ts
+│       firebase.ts
+│
+└───public
+        file.svg
+        globe.svg
+        next.svg
+        vercel.svg
+        window.svg
